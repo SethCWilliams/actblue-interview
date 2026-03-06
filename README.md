@@ -1,4 +1,4 @@
-# ActBlue Interview Prep — Seth Williams
+# ActBlue Interview Prep: Seth Williams
 
 ## Overview
 
@@ -8,6 +8,7 @@ prepared in practice for the ActBlue technical assessment.
 ## Personal Note
 
 I was unsure about what questions would be asked beyond the point I reached in the initial interview, so I worked through likely follow-up scenarios with Claude to prepare.
+I also added business value for each scenario to help with the 'why' of each issue. That's just for me personally. 
 
 ## Files
 
