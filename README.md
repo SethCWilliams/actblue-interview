@@ -3,7 +3,7 @@
 ## Overview
 
 This repository contains Ruby solutions to object-oriented programming challenges
-prepared in practice for the ActBlue technical assessment.
+prepared in practice for the ActBlue technical assessment through Karat.
 
 ## Personal Note
 
@@ -15,7 +15,6 @@ I also added business value for each scenario to help with the 'why' of each iss
 ```
 actblue-interview/
 ├── log_challenge.rb        # solution only
-├── sample.txt              # demo data
 └── test/
     ├── test_log_file.rb    # full test suite
     └── fixtures/
@@ -114,15 +113,3 @@ Returns a hash of `{ "East" => count, "West" => count }` for complete journeys.
 Returns an array of booth ID(s) with the highest total traffic recordings.
 
 **Business value:** Informs maintenance scheduling and staffing. A booth handling disproportionate traffic is a bottleneck risk and may need hardware upgrades or an additional lane.
-
----
-
----
-
-## Running
-
-```bash
-ruby test/test_log_file.rb
-```
-
-Tests use Ruby's built-in `minitest` framework and run automatically.
