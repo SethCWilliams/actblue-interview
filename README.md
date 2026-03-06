@@ -31,6 +31,16 @@ actblue-interview/
 Given a log file of vehicle recordings at interstate booths, implement a `LogFile`
 class that parses and analyzes the data.
 
+## Running
+
+```bash
+ruby test/test_log_file.rb
+```
+
+Tests use Ruby's built-in `minitest` framework and run automatically.
+
+---
+
 ### Data Format
 
 Each line in the log file represents a single booth recording:
@@ -111,13 +121,3 @@ Returns an array of booth ID(s) with the highest total traffic recordings.
 
 ### Code Quality
 - [ ] Extract `key = [entry.license_plate, entry.direction]` into a helper method to avoid repetition
-
----
-
-## Running
-
-```bash
-ruby test/test_log_file.rb
-```
-
-Tests use Ruby's built-in `minitest` framework and run automatically.
