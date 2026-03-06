@@ -117,18 +117,12 @@ Returns an array of booth ID(s) with the highest total traffic recordings.
 
 ---
 
-## TODO
+---
 
-### Code Quality
+## Running
 
-- [ ] Extract `journey_key(entry)` as a private helper to eliminate the repeated `[entry.license_plate, entry.direction]` in `process_journeys`
+```bash
+ruby test/test_log_file.rb
+```
 
-- [ ] Replace `@open_entries.store(key, entry)` with idiomatic `@open_entries[key] = entry`
-
-- [ ] Remove `@journey_durations` — it's redundant since `@journey_records` already contains every duration. Compute average directly from `@journey_records`
-
-- [ ] Replace `@open_entries.keys.map { |key| key[0] }` with `@open_entries.keys.map(&:first)` in `incomplete_journeys`
-
-- [ ] Extract shared max-lookup logic from `most_frequent_travelers` and `busiest_booth` into a private `top_keys(hash)` helper
-
-- [ ] Split `process_journeys` — move the average duration calculation into a separate private `compute_average` method to keep the loop focused on state
+Tests use Ruby's built-in `minitest` framework and run automatically.
